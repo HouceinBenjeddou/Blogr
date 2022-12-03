@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap');
+:root {
+    --primary-color: hsl(356, 100%, 66%);
+    --secondary-color: hsl(355, 100%, 74%);
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    color: var(--primary-color);
+    line-height: 1.6;
+}
+
+
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/* navbar */
+
+.navbar {
+    background-color: var(--primary-color);
+    height: 130px;
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+.navbar ul{
+    display:flex;    
+}
+
+.navbar a{
+    color: hsl(355, 100%, 77%);
+    padding: 10px;
+    margin: 0 5px;
+    font-weight: 600;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 20px;
+    padding: 10px;
+    left: 200px;
+    cursor:pointer;
+}
+
+.cta button{
+    background-color: white;
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 20px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: bolder;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 15px;
+    padding: 12px 35px;
+}
+
+
+#last-child:hover,#last-child:focus, #last-child:active {
+    background-color: hsl(355, 100%, 74%);
+    color: white;
+
+
+}
+#first-child {
+    background-color: hsl(356, 100%, 66%);
+    color: hsl(355, 100%, 77%);
+    font-weight: 600;
+    position: relative;
+    left: 100px;
+}
+
+#last-child {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translate(0);
+    transform: perspective(1px) translate(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    -webkit-transition-duration: 0.3s;
+    transition-duration:0.3s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+    position: relative;
+    right: 170px;
+}
+
+
+
+.flex {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* hero */
+
+.hero .container {
+    position: relative;
+    background-color: hsl(356, 100%, 66%);
+    height: 300px;
+    color: white;
+    border: none;
+    border-bottom-left-radius: 100px;
+    
+}
+
+
+.container .header {
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 3.5rem;
+}
+
+.hero h1, p{
+    font-size: 1rem;
+    line-height: 2;
+    text-align: center;
+}
+
+.hero p {
+    font-weight: 300;
+    color: hsl(354, 96%, 80%);
+}
+
+.hero .container button {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left:550px;
+    background-color: white;
+    text-align: center;
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 20px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: bolder;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 12px 35px;
+    margin: 30px 10px;
+}
+
+#first {
+    -webkit-transform: perspective(1px) translate(0);
+    transform: perspective(1px) translate(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    -webkit-transition-duration: 0.3s;
+    transition-duration:0.3s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+}
+
+#first:hover,#first:focus, #first:active {
+    background-color: hsl(355, 100%, 74%);
+    color: white;
+}
+
+#second {
+    text-align: center;
+    color: white;
+    background-color: hsl(356, 100%, 66%);
+    border: 2px solid;
+    border-radius: 20px;
+    border-color: white;
+}
+
+
+#second { 
+        -webkit-transform: perspective(1px) translate(0);
+        transform: perspective(1px) translate(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        overflow: hidden;
+        -webkit-transition-duration: 0.3s;
+        transition-duration:0.3s;
+        -webkit-transition-property: color, background-color;
+        transition-property: color, background-color;
+}
+
+#second:hover,#second:focus, #second:active {
+    background-color: white;
+    color: hsl(355, 100%, 74%);
+}
+
+.showcase .container {
+    position:relative;
+    background-color: white;
+    height: 850px;
+}
+
+.showcase h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: hsl(237, 23%, 32%);
+}
+
+.showcase img {
+    position: relative;
+    left: 59%;
+    height: 700px;
+    margin: 50px 0;
+    padding: 50px 0;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    height: 100%;
+
+}
+
+.showcase .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.showcase .grid > *:last-child {
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 2;
+
+}
